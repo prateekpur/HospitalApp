@@ -47,4 +47,15 @@ public class Patient implements java.io.Serializable {
   public void setAddress(String address)  {
     this.address = address;
   }
+
+  public String toString()  {
+    StringBuilder bld = new StringBuilder("ID : ");
+    bld.append(patientId);
+    bld.append("  NAME  : ");
+    bld.append(patientName);
+    bld.append("  ADDRESS  : ");
+    bld.append(address);
+    return bld.toString();
+  }
+
 }
